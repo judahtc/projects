@@ -1,0 +1,28 @@
+<table class="table table-striped">
+    <thead>
+    <tr style="background-color:teal;">
+        <th>ITEM NAME</th>
+        <th>CLIENT NAME</th>
+        <th>DATE</th>
+        <th>QUANTITY</th>
+        <th>ACCOUNT NUMBER</th>
+        <th>PAYMENT METHOD</th>
+      
+        <th>PHONE</th>
+        <th></th>
+    </tr>
+</thead>
+<tbody>
+    <tr  *ngFor="let ame of sales">
+        <td>{{ame.item_name}}</td>
+        <td>{{ame.clientname}}</td>
+        <td>{{ame.date}}</td>
+        <td>{{ame.quantity}}</td>
+        <td>{{ame.accountNumber}}</td>
+        <td>{{ame.payment_method}}</td>
+        <td>{{ame.phone}}</td>
+        <td><a href="">refund</a></td>
+       
+    </tr>
+</tbody>
+</table>
