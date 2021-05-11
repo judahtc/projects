@@ -1,0 +1,132 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="content">
+    
+        <nav class="navbar navbar-dark bg-info navbar-expand-lg">
+            <a class="navbar-brand" HREF="">STORE</a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#NBSC"><span class="navbar-toggler-icon"></span></button>    
+        <div class="collapse navbar-collapse" id="NBSC">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href=""><i style="color: beige;" class="fas fa-cart-plus"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login">Login</a>
+                </li>
+                
+
+            </ul>
+        </div>
+        </nav>
+</div>
+
+        <h4 style="text-align: center;margin-top:1%;color:teal">JULOH ONLINE STORE</h4>
+
+
+        <hr></hr>
+<div class="all">
+        <div class="card">
+                <div class="card-header">
+                        <b>router</b>
+                </div>
+                <div class="card-body">
+                       <img src="{% static 'images/router.jpg' %}"> 
+                </div>
+                <div class="card-footer">
+                    <a class="l1" href="login">Add to cart</a><a class="l2" href="">view</a>
+                </div>
+        </div>
+
+        
+        <div class="card">
+                <div class="card-header">
+                    <b>mifi</b>
+                </div>
+                
+                <div class="card-body">
+                    <img src="{% static 'images/mifi.jpg' %}"> 
+                </div>
+
+                <div class="card-footer">
+                    <a class="l1" href="login">Add to cart</a><a class="l2" href="">view</a>
+  
+                </div>
+        </div>
+
+
+        
+        <div class="card">
+                <div class="card-header">
+                    <b>repeater</b>
+                </div>
+                <div class="card-body">
+                    <img src="{% static 'images/repeater.jpg' %}"> 
+                </div>
+                <div class="card-footer">
+                    <a class="l1" href="login">Add to cart</a><a class="l2" href="">view</a>
+
+                </div>
+        </div>
+
+</div>        
+
+
+
+<div class="all1">
+    <div class="card">
+            <div class="card-header">
+                    <b>hub</b>
+            </div>
+            <div class="card-body">
+                <img src="{% static 'images/hub.jpg' %}"> 
+            </div>
+            <div class="card-footer">
+                <a class="l1" href="login">Add to cart</a><a class="l2" href="">view</a>
+            </div>
+    </div>
+
+    
+    <div class="card">
+            <div class="card-header">
+                <b>switch</b>
+            </div>
+            
+            <div class="card-body">
+                <img src="{% static 'images/switch.jpg' %}"> 
+            </div>
+
+            <div class="card-footer">
+                <a class="l1" href="login">Add to cart</a><a class="l2" href="">view</a>
+
+            </div>
+    </div>
+
+
+    
+    <div class="card">
+            <div class="card-header">
+                <b>charger</b>
+            </div>
+            <div class="card-body">
+                <img src="{% static 'images/charger.jpg' %}"> 
+            </div>
+            <div class="card-footer">
+                <a class="l1" href="login">Add to cart</a><a class="l2" href="">view</a>
+
+            </div>
+    </div>
+
+</div>    
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+
+{% endblock %}

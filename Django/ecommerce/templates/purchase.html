@@ -1,0 +1,27 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    {% for data1 in data %}
+<form method="POST" action="/checkOut/{{data1.id}}"  style="padding: 5%;">
+    {% csrf_token %}
+<input type="text" name="username" value="{{data1.clientname}}" readonly>
+<input type="text" name="item_name" value="{{data1.item_name}}" readonly><br><br>
+<input type="text" name="item_price" value="{{data1.item_price}}" readonly>
+<input type="text" name="phone" value="" required placeholder="phone"><br><br>
+<input type="text" name="acc" value="" required size="46.9999999999999999" placeholder="account number"><br><br>
+<input type="number" name="quantity" value="1"  size="46.9999999999999999">
+<select name="payment_method" style="width: 180px;">
+    <option value="ecocash">ecocash</option>
+    <option value="zipit">zipit</option>
+    <option value="visa card">visa card</option>
+    
+</select>
+<br><br>
+<button class="btn bg-info btn-sm btn-expand-lg ">Checkout</button>
+
+</form>
+{% endfor %}
+
+{% endblock %}

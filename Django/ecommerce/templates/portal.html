@@ -1,0 +1,55 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="content">
+    
+        <nav class="navbar navbar-dark bg-info navbar-expand-lg" style="box-shadow: 4px 3px 8px 1px  #4d8c97;">
+            <a class="navbar-brand" HREF="">STORE</a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#NBSC"><span class="navbar-toggler-icon"></span></button>    
+        <div class="collapse navbar-collapse" id="NBSC">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/myCart" target="portal"><i style="color: beige;" class="fas fa-cart-plus"> <sup style="font-weight: bold;">{{data2}}</sup></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/myCart" target="portal">My Carts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Logout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Account</a>
+                </li>
+
+            </ul>
+        </div>
+        </nav>
+</div>
+
+        <h4 style="text-align: center;margin-top:1%;color:teal">JULOH ONLINE STORE</h4>
+        {% for data4 in data3 %}
+        {{data4.username}}
+        {% endfor %}
+
+
+        <hr></hr>
+
+       
+        <iframe class="iframe1" src="mainPortal" style="margin-top: -1%;width:100%;height:31.4em" frameborder="0" name="portal"></iframe>
+
+
+        
+<footer class="page-footer font-small bg-info blue p-0 m-0 " >
+
+  
+  <div class="footer-copyright text-center py-3"><B style="color:white">© 2021 JULOH Copyright</B><BR>
+    <a href="https://mailto:jaycea247@gmail.com/" STYLE="COLOR:WHITE">JULOH SOFTWARES</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+        {% endblock %}

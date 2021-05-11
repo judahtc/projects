@@ -1,0 +1,25 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="email" style="color:aqua;padding: 1%;border:1px dashed teal;margin:8%;font-weight: bold;margin-bottom: %;">
+    <h4>YOUR ORDER</h4>
+    <CENTER><hr style="width: 90%;"></hr></CENTER>
+   <li style="color: navy;"> item name:{{order_name}} x {{quantity}}</li>
+   <li style="color: navy;">item price:{{order_price}}</li>
+<li style="color: navy;">date:{{date}}</li>
+
+</div>
+
+
+
+<div style="color: midnightblue;text-shadow:1px 1px teal;font-weight: bold;padding: 2%;margin-left: 6%;">
+    JUDAH T CHISARE | PRODUCT OWNER<BR>
+    (+263)785 430 774<br>
+    <I>5857 WESTLEA HARARE</I>    
+</div>
+
+
+
+{% endblock %}

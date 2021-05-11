@@ -1,0 +1,41 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<div class="jumbotron">
+    <div class="header">
+        <h3 class="header bg-white" style="text-align: center;color:teal;padding:1%;margin-top:-2.4%">MY CART<span style="border:1px solid rgb(245, 220, 241);border-radius:40%;padding:0.2%;color:rgb(189, 26, 153);margin-left:5px">{{data2}}</span></h3>
+    </div>
+
+    {% for cart in data %}
+    <form method="GET" action="/purchase/{{cart.id}}">
+<div class="card" style="padding: 1%;">
+<table>
+    <tr class="card-header">
+        
+        <th>ITEM NAME:</th><td>{{cart.item_name}}</td>
+    
+    </tr>
+
+    <tr>
+        <th>PRICE:</th><td>US${{cart.item_price}}</td>
+    </tr>
+
+    <tr>
+        <th>ID:</th><td>{{cart.item_id}}</td>
+    </tr>
+
+    <tr class="card-footer"><td><button class="btn-sm bg-info">purchase</button></td><td><a class="item-link" href="/delete/{{cart.id}}">delete</a></td></tr>
+</table>
+</div>
+<hr></hr>
+
+</form>
+{% endfor %}
+
+
+
+{{one}}
+</div>
+{% endblock %}

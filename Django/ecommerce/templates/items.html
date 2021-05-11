@@ -1,0 +1,29 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
+<table class="table table-striped table-bordered" style="margin-top: 3%;width:70%;">
+    <tr>
+        <th>item id</th>
+        <th>item name</th>
+        <th>item price</th>
+        <th>quantity</th>
+        <td></td>
+        <td></td>
+    </tr>
+{% for items in data %}
+<tr>
+    <td>{{items.item_id}}</td>
+    <td>{{items.item_name}}</td>
+    <td>{{items.item_price}}</td>
+    <td>{{items.quantity}}</td>
+    <td><a href="">edit</a></td>
+    <td><a href="/deleteItems/{{items.id}}">delete</a></td>
+</tr>
+
+{% endfor %}
+</table>
+
+{% endblock %}

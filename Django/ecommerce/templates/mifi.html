@@ -1,0 +1,28 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<form action="addMifi">
+    {% csrf_token %}
+       <div class="halftwo">
+        <div class="half">
+            <img style="margin-left:2%;" src="{% static 'images/mifi.jpg'   %}">
+        </div>
+
+        <div class="two" style="margin-left:-7%">
+    <table class="table table-striped table-bordered">
+      <tr> <td> <b>Product</b>:mifi<Br></td></tr>
+        <tr><td> <b>price</b>:${{data1.item_price}}<Br></td></tr>
+            <tr><td><b>brand</b>:huawei<Br></td></tr>
+    </table>
+        </div>
+    </div>    
+    <div class="meonly">
+    <button class="btn  btn-small bg-info" style="color:white" action="addMifi">ADD TO CART</button>
+</div>
+
+<center><B>{{data2}}</B></center>
+</form>
+ 
+    {% endblock %}

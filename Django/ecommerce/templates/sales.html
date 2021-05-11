@@ -1,0 +1,31 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
+<table class="table table-striped table-bordered" style="margin-top: 3%;width:70%;">
+    <tr><th>Date</th>
+        <th>item id</th>
+        <th>item name</th>
+        <th>item price</th>
+        <th>quantity</th>
+        <th>payment method</th>
+        <td></td>
+        <td></td>
+    </tr>
+{% for sales in data %}
+<tr><td>{{sales.date}}</td>
+    <td>{{sales.item_id}}</td>
+    <td>{{sales.item_name}}</td>
+    <td>{{sales.price}}</td>
+    <td>{{sales.quantity}}</td>
+    <td>{{sales.payment_method}}</td>
+    <td><a href="">edit</a></td>
+    <td><a href="/deleteItems/{{items.id}}">delete</a></td>
+</tr>
+
+{% endfor %}
+</table>
+
+{% endblock %}
