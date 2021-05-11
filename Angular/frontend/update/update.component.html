@@ -1,0 +1,17 @@
+<form [formGroup]="form"  (ngSubmit)="update()">
+<table class="table table-striped  mt-4">
+<tr >
+<th>USERNAME</th><td><input type="text" formControlName="name"></td>
+</tr>
+<tr >
+<th>EMAIL</th><td><input type="text" formControlName="email"></td>
+</tr>
+<tr >
+<th>CONTACT</th><td><input formControlName="password" type="text" ></td>
+</tr>
+</table>
+
+
+        <button type="submit" class="btn btn-sm bg-info " style="margin-left: 10%;width: 50%;" name="submit">UPDATE</button>
+</form>
+    
