@@ -1,0 +1,34 @@
+
+  .form-control{
+      width: 100%;
+  }
+
+  .signup-form{
+   margin-top: 5%;
+   margin-left: 27%;
+   margin-right: 27%;
+   padding: 3%;
+   background-color: beige;
+  }
+  .btn-signup{
+      width: 100%;
+
+  }
+
+  .body{
+      background-color: azure;
+  }
+  .loginhere{
+      text-align: center;
+  }
+
+  .label-agree-term{
+font-size: smaller;
+  }
+  #sect1 {  
+    height: 650 px;  
+    color: #fff;
+    background-image:url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Ffree%2520background%2F&psig=AOvVaw0cl9s-BCyOJ8df85APxME0&ust=1616507444348000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLj4ttiFxO8CFQAAAAAdAAAAABAJ');  
+    background-size:100% ;  
+    background-size:cover;  
+}   

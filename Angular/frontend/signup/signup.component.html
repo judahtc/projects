@@ -1,0 +1,37 @@
+<div class="main" id="sect1">
+
+    <section class="signup">
+        <!-- <img src="images/signup-bg.jpg" alt=""> -->
+       
+            <div class="signup-content">
+                <form [formGroup]="form" (ngSubmit)="onSubmit()"  class="signup-form" action="#">
+                    <h2 class="form-title">Create account</h2>
+                    <div class="form-group">
+                        <input type="text" class="form-control" formControlName="name"  name="name" id="name" placeholder="Your Name" ngModel/>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" formControlName="email"  name="email" id="email" placeholder="Your Email" ngModel/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" formControlName="password"  name="password" id="password" placeholder="Password" ngModel/>
+                        <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                        <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                    </div>
+                    <div>
+                        <button type="submit" name="submit"  class="btn-signup btn  btn-small bg-info" >Sign up</button>
+                    </div><br>
+                    <p class="loginhere">
+                        Have already an account ? <a href="/login" class="loginhere-link">Login here</a>
+                    </p>
+                </form>
+              
+
+        </div>
+    </section>
+
+</div>
+
