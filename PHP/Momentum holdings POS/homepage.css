@@ -1,0 +1,102 @@
+
+body{
+margin:0;
+padding:0;
+background-size: cover;
+background-position:absolute;
+}
+
+.topnav
+{
+padding:2.5px;
+margin:0;
+margin-bottom:0;
+display: flex;
+background-color:ghostwhite;
+color:white;
+border-bottom:solid 1px;
+border-color:gray;
+text-align:center;
+}
+
+.dashbord{
+padding:10px;
+margin-left: 0;
+background-color:#2f4454;
+width: 207px;
+height: 90em;
+border-right:solid 1px;
+}
+
+.dashbord ul{
+  padding-left:0;
+  list-style: none;
+}
+.dashbord ul li{
+
+  margin-bottom: 35px;
+}
+
+.dashbord ul li a{
+  text-decoration:none;
+  color:white;
+  margin-top:1px;
+}
+
+.dashbord a:hover{
+  /*overflow:hidden;*/
+  background-color:navy;
+  padding: 15px;
+  margin:0;
+  text-overflow: ellipsis;
+
+}
+.but{
+  margin-top:20px;
+  margin-left:880px;
+}
+.topnav img{
+  height: 40px;
+  width: inherit;
+  margin-top: 13px;
+  border-radius: 3.5px;
+
+}
+.dashbord img{
+  height: 40px;
+  width: inherit;
+  border-radius: 3.5px;
+  padding: 0;
+  margin-left:90px;
+}
+.all{
+  display: flex;
+
+}
+.pay ul{
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.pay ul li{
+  margin: 6px;
+  border:solid 1px;
+  padding: 10px;
+  border-color: white;
+  border-radius: 3.5px;
+  width: 190px;
+  text-align: center;
+}
+.two{
+  background: rgba(0, 0, 0, 0.1);
+}
+.note p{
+background-color:pink;
+color:red;
+margin-top:0;
+}
+
+
